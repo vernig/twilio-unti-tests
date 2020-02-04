@@ -1,0 +1,13 @@
+[
+  {
+    "name": "UnitTestsPlugin",
+    "version": "0.0.0",
+    "class": "UnitTestsPlugin",
+    "requires": [
+      {
+        "@twilio/flex-ui": "^1"
+      }
+    ],
+    "src": "http://127.0.0.1:8085"
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "name": "plugin-unit-tests",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "bootstrap": "flex-plugin check-start",
+    "prebuild": "rimraf build && npm run bootstrap",
+    "build": "flex-plugin build",
+    "clear": "flex-plugin clear",
+    "predeploy": "npm run build",
+    "deploy": "flex-plugin deploy",
+    "eject": "flex-plugin eject",
+    "info": "flex-plugin info",
+    "postinstall": "npm run bootstrap",
+    "list": "flex-plugin list",
+    "remove": "flex-plugin remove",
+    "prestart": "npm run bootstrap",
+    "start": "flex-plugin start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "craco-config-flex-plugin": "^3.3.4",
+    "flex-plugin": "^3.0.0",
+    "flex-plugin-scripts": "^3.3.5",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
+    "react-scripts": "3.2.0",
+    "typescript": "^3.6.4"
+  },
+  "devDependencies": {
+    "@twilio/flex-ui": "^1",
+    "@types/enzyme": "^3.10.3",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.12",
+    "@types/react": "^16.8.16",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-redux": "^7.1.1",
+    "babel-polyfill": "^6.26.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^25.1.0",
+    "js-base64": "^2.5.1",
+    "node-fetch": "^2.6.0",
+    "rimraf": "^3.0.0",
+    "twilio": "^3.39.3",
+    "xml2js": "^0.4.23"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
