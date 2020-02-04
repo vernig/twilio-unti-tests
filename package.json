@@ -16,7 +16,7 @@
     "remove": "flex-plugin remove",
     "prestart": "npm run bootstrap",
     "start": "flex-plugin start",
-    "test": "jest"
+    "test": "jest --setupFiles dotenv/config"
   },
   "dependencies": {
     "craco-config-flex-plugin": "^3.3.4",
@@ -36,6 +36,7 @@
     "@types/react-dom": "^16.8.4",
     "@types/react-redux": "^7.1.1",
     "babel-polyfill": "^6.26.0",
+    "dotenv": "^8.2.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "jest": "^25.1.0",
