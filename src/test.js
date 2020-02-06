@@ -27,6 +27,12 @@ describe('add-conference-participant', () => {
   
     it('executes', done => {
       const tokenFunction = require('./functions/twilio/add-conference-participant').handler;
+      var e = {
+        taskSid: '',
+        to: '',
+        from: '',
+        token: ''
+      }
       const callback = (err, response) => {
         expect(response._headers).toEqual(
           { 'Access-Control-Allow-Origin': '*',
@@ -36,7 +42,7 @@ describe('add-conference-participant', () => {
         );
         done();
       };
-      tokenFunction(context, {}, callback);
+      tokenFunction(context, e, callback);
     });
   });
 
